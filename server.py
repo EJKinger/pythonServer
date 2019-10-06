@@ -15,7 +15,7 @@ class myHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header('Content-type','text/html')
     self.end_headers()
-    self.wfile.write('<b>Eric\'s GCP VM</b>!')
+    self.wfile.write('<b>Eric\'s GCP VM Python Server!</b>!')
     return
 
 httpd = BaseHTTPServer.HTTPServer(('0.0.0.0', 443), myHandler)
